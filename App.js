@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Button, StyleSheet, Text, View} from 'react-native';
 
 export default class App extends React.Component {
     constructor(props) {
@@ -13,9 +13,13 @@ export default class App extends React.Component {
         return (
             <View style={styles.container}>
                 <Text>Open up App.js to start working on your app!</Text>
-                <Text>{this.state.counter}</Text>
+                <Text style={{fontSize: 42}}>{this.state.counter}</Text>
                 <Button
-                    onPress={() => {}}
+                    onPress={() => {
+                        this.setState({
+                            counter: this.state.counter + 1
+                        })
+                    }}
                     title="Learn More"
                     />
             </View>
