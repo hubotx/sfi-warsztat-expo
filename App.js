@@ -14,6 +14,10 @@ export default class App extends React.Component {
             <View style={styles.container}>
                 <Text>Open up App.js to start working on your app!</Text>
                 <Text>{this.state.counter}</Text>
+                <Button
+                    onPress={() => {}}
+                    title="Learn More"
+                    />
             </View>
         );
     }
